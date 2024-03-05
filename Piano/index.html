@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <div id="piano">
+        <header>
+           <h2>Playable Piano</h2>
+           <div class="volume control">
+            <span>Volume</span><input type="range" class="input" min="0" max="1" value="0.5" step="any">
+           </div>
+           <div class="keyShowHide control">
+            <span>Show Keys</span><input type="checkbox" checked>
+           </div>
+        </header>
+        <div class="pianoKeys">
+            <div class="white key" data-key="a"><span>a</span></div>
+            <div class="black key" data-key="w"><span>w</span></div>
+            <div class="white key" data-key="s"><span>s</span></div>
+            <div class="black key" data-key="e"><span>e</span></div>
+            <div class="white key" data-key="d"><span>d</span></div>
+            <div class="white key" data-key="f"><span>f</span></div>
+            <div class="black key" data-key="t"><span>t</span></div>
+            <div class="white key" data-key="g"><span>g</span></div>
+            <div class="black key" data-key="y"><span>y</span></div>
+            <div class="white key" data-key="h"><span>h</span></div>
+            <div class="black key" data-key="u"><span>u</span></div>
+            <div class="white key" data-key="j"><span>j</span></div>
+            <div class="white key" data-key="k"><span>k</span></div>
+            <div class="black key" data-key="o"><span>o</span></div>
+            <div class="white key" data-key="l"><span>l</span></div>
+            <div class="black key" data-key="p"><span>p</span></div>
+            <div class="white key" data-key=";"><span>;</span></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#piano{
+    width: 780px;
+    background-color: rgb(50, 47, 47);
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+#piano header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+header h2{
+    font-size: 1.5rem;
+}
+header .control{
+    display: flex;
+    align-items: center;
+}
+header .control span{
+    font-size: 18px;
+    margin-right: 14px;
+}
+header .volume input{
+    accent-color: white;
+} 
+header .keyShowHide input {
+    appearance: none;
+    width: 60px;
+    height: 30px;
+    background-color: #4b4b4b;
+    border-radius: 30px;
+    position: relative;
+}
+header .keyShowHide input::before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: rgb(139, 143, 145);
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    border-radius: inherit;
+    position: absolute;
+    transition:all 0.3s;
+}
+header .keyShowHide input:checked::before{
+    left: 35px;
+    background-color: #fff;
+}
+.pianoKeys{
+    display: flex;
+    margin-top: 1rem;
+    /* align-items: center; */
+}
+.pianoKeys .key{
+    color: white;
+    text-transform: uppercase;
+}
+.pianoKeys .white{
+    width: 70px;
+    background-image: linear-gradient(#fff 96%,#eee 4%);
+    color: #4b4b4b;
+    height: 200px;
+    position: relative;
+    border-radius: 8px;
+    border: 1px solid #333;
+}
+.pianoKeys .white.active{
+    box-shadow: inset -5px 5px 20px rgba(0,0,0,0.2);
+    background-image: linear-gradient(to bottom #fff 4%,#eee 96%);
+}
+.pianoKeys .black{
+    width: 45px;
+    height: 100px;
+    border-radius: 0 0 10px 10px;
+    background-image: linear-gradient( #333,#000);
+    margin: 0 -22px 0 -22px;
+    z-index: 2;
+    position: relative;
+}
+.pianoKeys .black.active{
+    box-shadow: inset -5px 5px 10px rgba(255,255,255,0.2);
+    background-image: linear-gradient(to bottom #000,#434343 );
+}
+.pianoKeys .key span{
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    /* display: none; */
+}
+.pianoKeys .key.hide span{
+    display: none;
+}
+
