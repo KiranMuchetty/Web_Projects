@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body .container{
+    background-color: wheat;
+    width: 21%;
+    /* height: 95%; */
+    padding: 5px 15px;
+    background-color: black;
+    border-radius:35px;
+    box-shadow: 0px 0px 5px black;
+}
+body .container .input input{
+    width: 100%;
+    padding: 15px 10px;
+    outline: none;
+    border: none;
+    font-size: 40px;
+    text-align: right;
+    margin-top: 4.5rem;
+    margin-bottom: 0.5rem;
+    background-color: transparent;
+    color: white;
+    font-weight: 100;
+    box-sizing: border-box;
+} 
+input::placeholder{
+    color: white;
+}
+body .container .contain{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,45px);
+    grid-template-rows: repeat(5,45px);
+    gap: 8px;
+}
+body .container .contain button{
+    padding: 8px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+ .operator{
+    background-color: #f67c14;
+    color: white;
+}
+.numbrs{
+    background-color: rgb(51,51,51);
+    color: white;
+}
+.control{
+    background-color: rgb(174,174,174);
+}
+.line{
+    width: 80px;
+    height: 3px;
+    background-color: white;
+    margin: 25px auto 5px;
+    border-radius: 15px;
+}
